@@ -9,3 +9,4 @@ keras_biological_gaps_sequence.egg-info/SOURCES.txt
 keras_biological_gaps_sequence.egg-info/dependency_links.txt
 keras_biological_gaps_sequence.egg-info/requires.txt
 keras_biological_gaps_sequence.egg-info/top_level.txt
+keras_biological_gaps_sequence/datasets/hg19_hg38.bed

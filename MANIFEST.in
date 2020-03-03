@@ -1,1 +1,1 @@
-include keras_biological_gaps_sequences/datasets/*.bed
+include keras_biological_gaps_sequence/datasets/*.bed
