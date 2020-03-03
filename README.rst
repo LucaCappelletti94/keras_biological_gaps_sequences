@@ -15,13 +15,38 @@ As usual, just download it using pip:
 
 Tests Coverage
 ----------------------------------------------
-Since some software handling coverages sometime
+Since some software handling coverages sometimes
 get slightly different results, here's three of them:
 
 |coveralls| |sonar_coverage| |code_climate_coverage|
 
-Python package to generate on-hot encoded biological gaps to use for training and prediction.
+Available datasets
+-----------------------------------------------
+Currently, there is only a dataset of gaps available
+within the package: the mapping of known gaps from hg19
+to hg38. In the future, we will be adding more mapping.
 
+Usage example
+-----------------------------------------------
+To use the sequence you can do as follows:
+
+.. code:: Python
+
+    biological_gap_sequence = BiologicalGapsSequence(
+        source="hg19",
+        target="hg38",
+        source_window_size=1000,
+        target_window_size=1000,
+        batch_size=32
+    )
+
+    model = build_my_denoiser()
+    model.fit_generator(
+        biological_gap_sequence,
+        steps_per_epoch=biological_gap_sequence.steps_per_epoch,
+        epochs=2,
+        shuffle=True
+    )
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/keras_biological_gaps_sequences.png
    :target: https://travis-ci.org/LucaCappelletti94/keras_biological_gaps_sequences

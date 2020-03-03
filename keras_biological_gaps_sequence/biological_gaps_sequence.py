@@ -135,12 +135,17 @@ class BiologicalGapsSequence(Sequence):
         ---------------
         Return Tuple containing X and Y numpy arrays corresponding to given batch index.
         """
+        # Get the input sequence
         x = self._source_sequence[idx]
+        # Get the output sequence
         y = self._target_sequence[idx]
+        # Get the values corresponding to gaps
         nx = x[:, :, -1].astype(bool)
         ny = y[:, :, -1].astype(bool)
+        # Filter out the 5th nucleotide (the gaps)
         x = x[:, :, :4]
         y = y[:, :, :4]
+        # Apply uniform value where the nucleotide is a gap
         x[nx] = 0.25
         y[ny] = 0.25
         return x, y
