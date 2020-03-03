@@ -1,6 +1,6 @@
 from silence_tensorflow import silence_tensorflow
 silence_tensorflow()
-from keras_biological_gaps_sequences import BiologicalGapsSequence
+from keras_biological_gaps_sequence import BiologicalGapsSequence
 import pytest
 
 def test_biological_gaps_sequence_wrong_input():

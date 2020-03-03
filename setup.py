@@ -42,7 +42,7 @@ extras = {
 }
 
 setup(
-    name='keras_biological_gaps_sequences',
+    name='keras_biological_gaps_sequence',
     version=__version__,
     description="Python package to generate on-hot encoded biological gaps to use for training and prediction.",
     long_description=long_description,
