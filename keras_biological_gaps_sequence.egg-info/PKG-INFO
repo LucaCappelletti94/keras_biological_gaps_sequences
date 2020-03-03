@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: keras-biological-gaps-sequence
-Version: 1.0.1
+Version: 1.0.2
 Summary: Python package to generate on-hot encoded biological gaps to use for training and prediction.
 Home-page: https://github.com/LucaCappelletti94/keras_biological_gaps_sequences
 Author: LucaCappelletti94
