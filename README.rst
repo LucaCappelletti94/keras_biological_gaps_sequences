@@ -68,12 +68,12 @@ To use the sequence you can do as follows:
     :target: https://coveralls.io/github/LucaCappelletti94/keras_biological_gaps_sequences?branch=master
     :alt: Coveralls Coverage
 
-.. |pip| image:: https://badge.fury.io/py/keras-biological-gaps-sequences.svg
-    :target: https://badge.fury.io/py/keras-biological-gaps-sequences
+.. |pip| image:: https://badge.fury.io/py/keras-biological-gaps-sequence.svg
+    :target: https://badge.fury.io/py/keras-biological-gaps-sequence
     :alt: Pypi project
 
-.. |downloads| image:: https://pepy.tech/badge/keras-biological-gaps-sequences
-    :target: https://pepy.tech/badge/keras-biological-gaps-sequences
+.. |downloads| image:: https://pepy.tech/badge/keras-biological-gaps-sequence
+    :target: https://pepy.tech/badge/keras-biological-gaps-sequence
     :alt: Pypi total project downloads
 
 .. |codacy| image:: https://api.codacy.com/project/badge/Grade/90f25e6d3ab3448d9da0401f441dff79
