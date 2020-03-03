@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 from typing import Tuple
 
+
 class BiologicalGapsSequence(Sequence):
 
     def __init__(
