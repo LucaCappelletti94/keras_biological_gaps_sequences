@@ -26,7 +26,7 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find version string.")
 
 
-__version__ = find_version("keras_biological_gaps_sequence", "__version__.py")
+__version__ = find_version("keras_biological_gaps_sequences", "__version__.py")
 
 test_deps =[
     "pytest",
@@ -42,11 +42,11 @@ extras = {
 }
 
 setup(
-    name='keras_biological_gaps_sequence',
+    name='keras_biological_gaps_sequences',
     version=__version__,
     description="Python package to generate on-hot encoded biological gaps to use for training and prediction.",
     long_description=long_description,
-    url="https://github.com/LucaCappelletti94/keras_biological_gaps_sequences",
+    url="https://github.com/LucaCappelletti94/keras_biological_gaps_sequencess",
     author="LucaCappelletti94",
     author_email="cappelletti.luca94@gmail.com",
     # Choose your license
