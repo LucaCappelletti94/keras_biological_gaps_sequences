@@ -2,11 +2,6 @@ dist: trusty
 sudo: false
 git:
   depth: false
-addons:
-  sonarcloud:
-    organization: lucacappelletti94-github
-    token:
-      secure: LM3nEb4raN38Jgt7P8gaaPy6vehNA/taxnjqZk98YWUpqb7FPCoTlwJAA/LmtUaI2K7YqtSD3o3XZXvu2l1OhMDjE9ONukAfMqj3SPZkvmwNqP3rHn7w8yS8HVZy+wbOgLFUpIc1VrsXOZnKxT1c1nh5r6NCVZdu6SzDP12eOHWADxUwj8YJ7HDvUiEGUbvSFsIg+OEjPPwRnN9fe8HXECz9oAzRP/3q1G8GUuPUMc9PKIRul6Tj3pvexdyCDhGXk3vJzaddg0eWySpRIEAKmU2REwxKk96SxgAJGT7iiYTAuDp6jzQqLQShmgpB6QrWkV1d0PTezOPZV4gHNR4sXRHy9CkLLvqgntymzGGCDfJCgze6E6wuBeLcgSRtBtFz3ZGM6994mB/rlioQZ5cs4jNfDAAvYRNTUfTAZnqbPgi6suryuvrePnEep/bHcUtYIbO6hg0OB61Bdg928P5KO3PpC9to+CKxPrSbrYp9vQlWz71R074BmwsT2B2CM9bkI8IXwPfPBXwRXfhTR0e//8+3gAuaCKQFVfoSbat4SfrXIbBHclCFFK7ZJmh7da2YJGr5M47uXBeFloxv2dATNfN/fXYNyofYvI5Lfpjr5zT7Nztg5/apfRqjIWa9O+xX6pd/MytjSkWIgZdQVJDcFZf82KL1o/UecGMrcK5Iw9M=
 language: python
 python:
 - '3.6'
@@ -34,7 +29,6 @@ script:
 - coverage combine --append || true
 - coverage report
 - coverage xml
-- if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then sonar-scanner; fi
 after_success:
 - coveralls
 - python-codacy-coverage -r coverage.xml

@@ -1,6 +1,6 @@
 keras_biological_gaps_sequencess
 =========================================================================================
-|travis| |sonar_quality| |sonar_maintainability| |codacy|
+|travis| |codacy|
 |code_climate_maintainability| |pip| |downloads|
 
 Python package to generate on-hot encoded biological gaps to use for training and prediction.
@@ -18,7 +18,7 @@ Tests Coverage
 Since some software handling coverages sometimes
 get slightly different results, here's three of them:
 
-|coveralls| |sonar_coverage| |code_climate_coverage|
+|coveralls| |code_climate_coverage|
 
 Available datasets
 -----------------------------------------------
@@ -51,18 +51,6 @@ To use the sequence you can do as follows:
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/keras_biological_gaps_sequencess.png
    :target: https://travis-ci.org/LucaCappelletti94/keras_biological_gaps_sequencess
    :alt: Travis CI build
-
-.. |sonar_quality| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_keras_biological_gaps_sequencess&metric=alert_status
-    :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_keras_biological_gaps_sequencess
-    :alt: SonarCloud Quality
-
-.. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_keras_biological_gaps_sequencess&metric=sqale_rating
-    :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_keras_biological_gaps_sequencess
-    :alt: SonarCloud Maintainability
-
-.. |sonar_coverage| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_keras_biological_gaps_sequencess&metric=coverage
-    :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_keras_biological_gaps_sequencess
-    :alt: SonarCloud Coverage
 
 .. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/keras_biological_gaps_sequencess/badge.svg?branch=master
     :target: https://coveralls.io/github/LucaCappelletti94/keras_biological_gaps_sequencess?branch=master
